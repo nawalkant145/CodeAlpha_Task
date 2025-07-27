@@ -1,0 +1,84 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f1f6;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 320px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.06);
+  padding: 32px 24px 24px 24px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 4px;
+  font-size: 2rem;
+  letter-spacing: .15rem;
+  color: #114477;
+}
+
+h3 {
+  margin-top: 0;
+  color: #666;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.calculator {
+  margin-top: 18px;
+}
+
+.screen {
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 2px solid #114477;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  text-align: right;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+button {
+  font-size: 1.15rem;
+  padding: 14px 0;
+  border: none;
+  border-radius: 6px;
+  background: #e6e8ef;
+  color: #114477;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+}
+
+button.equal {
+  grid-column: span 4;
+  background: #114477;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+button.operation {
+  background: #c4d7ee;
+  color: #254a6c;
+}
+
+button.clear {
+  background: #fee;
+  color: #e66;
+}
+
+button:active {
+  background: #aaccff;
+}
